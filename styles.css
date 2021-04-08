@@ -1,0 +1,53 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: Helvetica
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.map-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#map {
+  position: absolute;
+  height: 100%;
+  width: 75%;
+}
+
+.buttons {
+  position: relative;
+/*   right: 15px;
+  top: 15px; */
+/*   z-index: 20000; */
+}
+
+/*
+ * We position the sidebar to the right by using float and setting the width
+ * to 100% - the width of the map, in this case 100% - 75% = 25%
+ */
+.sidebar {
+  background: #eee;
+  float: right;
+  height: 100%;
+  padding: 10px;
+  width: 25%;
+}
+
+.sidebar-footer {
+  margin-top: 75px;
+}
+
+
+.sidebar-feature-content {
+  margin-top: 5%
+}

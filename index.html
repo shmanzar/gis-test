@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Restaurant's approved for outdoor dining overlaid on PUMA</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    
+    <!-- Load Leaflet CSS -->
+    <link href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" rel="stylesheet">
+    
+    <!-- Load our styles -->
+    <link href="./styles.css" rel="stylesheet">
+    
+    <!-- Load Leaflet and Carto libraries -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://libs.cartocdn.com/carto.js/v4.2.0/carto.min.js"></script>
+    
+    <!-- Load our JavaScript -->
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div class="map-wrapper">
+      <div id="map"></div>
+  
+            <div class="sidebar">
+
+        <h3>
+          Click on the map to find out how many open restaurants are within 10,000 feet of the point you clicked.
+        </h3>
+                          <div class="buttons">
+        <button class="btn-kings">
+          Brooklyn
+        </button>
+        <button class="btn-queens">
+          Queens
+        </button>
+        <button class="reset-btn">
+          reset
+        </button>
+      </div>
+        <!-- We create a div where the count data will go when clicked on: -->
+        <div class="sidebar-feature-content"></div>
+      </div>
+    </div>
+  </body>
+</html>
